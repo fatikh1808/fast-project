@@ -12,7 +12,6 @@ export default function contactReducer(state = initialState, action) {
                 ...state,
                 contacts: action.payload
             };
-
         default:
             return state
     }

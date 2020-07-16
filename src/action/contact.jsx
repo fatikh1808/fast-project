@@ -46,6 +46,7 @@ export function contactAdd(name, number) {
             .then(response => response.json())
             .then(json => {
                 if (json) {
+                    console.log(json)
                     return json;
                 }
 

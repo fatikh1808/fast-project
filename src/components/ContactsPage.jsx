@@ -2,7 +2,7 @@ import React from 'react';
 import {withStyles} from '@material-ui/core';
 import Grid from '@material-ui/core//Grid';
 import Paper from '@material-ui/core/Paper';
-import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import InputBase from '@material-ui/core/InputBase';
 import SearchIcon from '@material-ui/icons/Search';
 import {fade} from '@material-ui/core/styles';
@@ -11,8 +11,6 @@ import Button from '@material-ui/core/Button';
 import DeleteIcon from '@material-ui/icons/Delete';
 import ListItemText from '@material-ui/core/ListItemText';
 import ListItem from '@material-ui/core/ListItem';
-
-const theme = createMuiTheme();
 
 const styles = theme => ({
     paper: {
@@ -26,7 +24,7 @@ const styles = theme => ({
         marginLeft: 400,
     },
     tabContent: {
-        padding: theme.spacing(2),
+        padding: theme.spacing(3),
     },
     search: {
         position: 'relative',
@@ -204,7 +202,7 @@ class ContactsPage extends React.Component {
 
         return (
             <React.Fragment>
-                <MuiThemeProvider theme={theme} >
+                <MuiThemeProvider>
                     <Grid container justify="center">
                         <Grid item>
                             <Paper className={classes.paper}>
@@ -263,7 +261,7 @@ class ContactsPage extends React.Component {
                             </Paper>
                         </Grid>
                     </Grid>
-                </MuiThemeProvider >
+                </MuiThemeProvider>
             </React.Fragment>
         );
     }

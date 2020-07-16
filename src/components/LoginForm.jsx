@@ -1,6 +1,6 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core';
-import TextField from 'material-ui/TextField';
+import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 
 const styles = theme => ({
@@ -76,7 +76,7 @@ class LoginForm extends React.Component {
                 />
                 <Button
                     fullWidth
-                    variant="raised"
+                    variant="text"
                     type="submit"
                     color="primary"
                     className={classes.signUpButton}

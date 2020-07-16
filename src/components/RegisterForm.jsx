@@ -107,7 +107,7 @@ class RegisterForm extends React.Component {
                 />
                 <Button
                     fullWidth
-                    variant="raised"
+                    variant="text"
                     type="submit"
                     color="primary"
                     className={classes.signUpButton}

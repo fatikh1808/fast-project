@@ -8,9 +8,7 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import LoginForm from './LoginForm';
 import RegisterForm from './RegisterForm';
-import {MuiThemeProvider, createMuiTheme} from '@material-ui/core/styles'
-
-const theme = createMuiTheme();
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 
 const styles = theme => ({
     paper: {
@@ -43,7 +41,7 @@ class WelcomePage extends React.Component {
 
         return (
             <React.Fragment>
-                <MuiThemeProvider theme={theme}>
+                <MuiThemeProvider>
                     <Grid container justify="center">
                         <Grid item>
                             <Paper className={classes.paper}>
