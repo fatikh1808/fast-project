@@ -1,3 +1,6 @@
-1. Запускаем сервер https://github.com/fatikh1808/fast-project-back
-2. type `npm install` in the project directory, to install modules.
-3. type `npm start` Open [http://localhost:3001](http://localhost:3001) to view it in the browser.
+Необходимые программы для запуска проекта: Node.js
+
+1. Запускаем сервер => https://github.com/fatikh1808/fast-project-back
+2. пишите `npm install` в директории проекта, что бы установились модули.
+3. пишите`npm start`, во время запроса `npm start` может возникнуть вопрос, можно ли создать другой хост для просмотра проекта. Ответ: да. Так как ваш хост по дефолту занят с сервером.
+4. Откройте [http://localhost:3001](http://localhost:3001) что бы пользоватся на браузере.
